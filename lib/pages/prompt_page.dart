@@ -1,7 +1,6 @@
 import 'package:cinnamon/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:cinnamon/colors.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:cinnamon/widgets/prompt_input.dart';
 
 class PromptPage extends StatefulWidget {
@@ -49,7 +48,7 @@ class _PromptPageState extends State<PromptPage> {
                   ),
                 ),
               ),
-              Flexible(
+              const Flexible(
                 flex: 2,
                 child: PromptInputField(),
               ),
