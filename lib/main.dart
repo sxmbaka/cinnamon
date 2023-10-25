@@ -18,6 +18,7 @@ class _CinnamonState extends State<Cinnamon> {
     return const MaterialApp(
       title: 'Cinnamon',
       home: PromptPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
