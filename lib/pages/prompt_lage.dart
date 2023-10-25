@@ -10,6 +10,6 @@ class PromptPage extends StatefulWidget {
 class _PromptPageState extends State<PromptPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold();
   }
 }
