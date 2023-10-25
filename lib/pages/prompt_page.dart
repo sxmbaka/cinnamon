@@ -15,17 +15,37 @@ class _PromptPageState extends State<PromptPage> {
     return Scaffold(
       backgroundColor: cyclamen,
       appBar: const CinnamonAppBar(),
-      body: Center(
-        child: Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(30), topRight: Radius.circular(30)),
-            color: babyPink,
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [cyclamen, flamingoPink],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
           ),
-          child: const Column(
-            children: [],
+        ),
+        child: Center(
+          child: Column(
+            children: [
+              Flexible(
+                flex: 3,
+                child: Container(
+                  width: double.infinity,
+                  height: double.infinity,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(33.0)),
+                    gradient: LinearGradient(
+                      colors: [babyPink, beige, beige, babyPink],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(
+                flex: 2,
+                child: Container(),
+              ),
+            ],
           ),
         ),
       ),
