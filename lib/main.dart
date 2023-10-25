@@ -1,4 +1,4 @@
-import 'package:cinnamon/pages/prompt_lage.dart';
+import 'package:cinnamon/pages/prompt_page.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
