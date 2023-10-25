@@ -10,6 +10,26 @@ class PromptPage extends StatefulWidget {
 class _PromptPageState extends State<PromptPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Row(
+          children: [
+            const Expanded(
+              child: Text(
+                'Cinnamon',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () {},
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

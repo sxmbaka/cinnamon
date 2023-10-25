@@ -15,6 +15,9 @@ class Cinnamon extends StatefulWidget {
 class _CinnamonState extends State<Cinnamon> {
   @override
   Widget build(BuildContext context) {
-    return const PromptPage();
+    return const MaterialApp(
+      title: 'Cinnamon',
+      home: PromptPage(),
+    );
   }
 }
