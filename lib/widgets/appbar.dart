@@ -27,6 +27,7 @@ class _CinnamonAppBarState extends State<CinnamonAppBar> {
             margin: const EdgeInsets.only(right: 8, bottom: 9),
             child: const Image(
               image: AssetImage('assets/images/icons8-bot-96.png'),
+              width: 60,
             ),
           ),
           Expanded(
