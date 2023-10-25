@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const MyAppBar({super.key});
+class CinnamonAppBar extends StatefulWidget {
+  const CinnamonAppBar({super.key});
 
+  @override
+  State<CinnamonAppBar> createState() => _CinnamonAppBarState();
+}
+
+class _CinnamonAppBarState extends State<CinnamonAppBar> {
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      
-    );
+    return const Placeholder();
   }
-
-  @override
-  // TODO: implement preferredSize
-  Size get preferredSize => throw UnimplementedError();
 }
