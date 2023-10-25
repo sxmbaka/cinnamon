@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CinnamonAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CinnamonAppBar({super.key});
@@ -22,11 +23,11 @@ class _CinnamonAppBarState extends State<CinnamonAppBar> {
       bottomOpacity: 0.3,
       title: Row(
         children: [
-          const Expanded(
+          Expanded(
             child: Text(
-              'Cinnamon',
-              style: TextStyle(
-                fontSize: 24,
+              'CINNAMON',
+              style: GoogleFonts.sourceCodePro(
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),

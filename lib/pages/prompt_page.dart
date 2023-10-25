@@ -1,4 +1,4 @@
-import 'package:cinnamon/widgets/appbar.dart';
+import 'package:cinnamon/widgets/yappbar.dart';
 import 'package:flutter/material.dart';
 
 class PromptPage extends StatefulWidget {
