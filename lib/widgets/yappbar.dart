@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:cinnamon/colors.dart';
 
 class CinnamonAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CinnamonAppBar({super.key});
@@ -13,27 +14,36 @@ class CinnamonAppBar extends StatefulWidget implements PreferredSizeWidget {
 }
 
 class _CinnamonAppBarState extends State<CinnamonAppBar> {
-  final appBarColor = Colors.pink;
-
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: appBarColor),
-      backgroundColor: appBarColor,
+      systemOverlayStyle: const SystemUiOverlayStyle(statusBarColor: cyclamen),
+      backgroundColor: cyclamen,
       bottomOpacity: 0.3,
+      shadowColor: Colors.transparent,
       title: Row(
         children: [
+          Container(
+            margin: const EdgeInsets.only(right: 8, bottom: 9),
+            child: const Image(
+              image: AssetImage('assets/images/icons8-bot-96.png'),
+            ),
+          ),
           Expanded(
             child: Text(
               'CINNAMON',
               style: GoogleFonts.sourceCodePro(
-                fontSize: 20,
+                fontSize: 30,
+                color: babyPink,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
           IconButton(
-            icon: const Icon(Icons.settings),
+            icon: const Icon(
+              Icons.settings,
+              color: babyPink,
+            ),
             onPressed: () {},
           ),
         ],
