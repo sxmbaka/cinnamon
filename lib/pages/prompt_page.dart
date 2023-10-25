@@ -1,4 +1,4 @@
-import 'package:cinnamon/widgets/yappbar.dart';
+import 'package:cinnamon/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:cinnamon/colors.dart';
 
@@ -37,17 +37,37 @@ class _PromptPageState extends State<PromptPage> {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 15,
+                        offset: Offset(0, 10),
+                      ),
+                    ],
                   ),
                 ),
               ),
               Flexible(
                 flex: 2,
                 child: Container(
-                  margin:
-                      EdgeInsets.only(top: 60, bottom: 30, left: 40, right: 40),
+                  margin: const EdgeInsets.only(
+                    top: 60,
+                    bottom: 30,
+                    left: 40,
+                    right: 40,
+                  ),
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(33.0)),
-                    color: beige,
+                    gradient: LinearGradient(
+                      colors: [babyPink, beige],
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 15,
+                        offset: Offset(10, 10),
+                      ),
+                    ],
                   ),
                 ),
               ),
