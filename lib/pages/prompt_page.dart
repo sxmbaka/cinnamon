@@ -13,7 +13,6 @@ class _PromptPageState extends State<PromptPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: cyclamen,
       appBar: const CinnamonAppBar(),
       body: Container(
         decoration: const BoxDecoration(
@@ -43,7 +42,14 @@ class _PromptPageState extends State<PromptPage> {
               ),
               Flexible(
                 flex: 2,
-                child: Container(),
+                child: Container(
+                  margin:
+                      EdgeInsets.only(top: 60, bottom: 30, left: 40, right: 40),
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(33.0)),
+                    color: beige,
+                  ),
+                ),
               ),
             ],
           ),
