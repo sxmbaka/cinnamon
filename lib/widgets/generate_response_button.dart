@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cinnamon/colors.dart';
 
 class GenerateResponseButton extends StatelessWidget {
-  const GenerateResponseButton({super.key});
+  const GenerateResponseButton({super.key, required this.onPressed});
+  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +28,7 @@ class GenerateResponseButton extends StatelessWidget {
           color: beige,
           size: 40,
         ),
-        onPressed: () {
-          debugPrint('GenerateResponseButton pressed');
-        },
+        onPressed: () {},
       ),
     );
   }

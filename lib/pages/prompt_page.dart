@@ -2,6 +2,8 @@ import 'package:cinnamon/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:cinnamon/colors.dart';
 import 'package:cinnamon/widgets/prompt_input.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PromptPage extends StatefulWidget {
   const PromptPage({super.key});
@@ -26,8 +28,7 @@ class _PromptPageState extends State<PromptPage> {
         child: Center(
           child: Column(
             children: [
-              Flexible(
-                flex: 3,
+              Expanded(
                 child: Container(
                   width: double.infinity,
                   height: double.infinity,
@@ -46,12 +47,16 @@ class _PromptPageState extends State<PromptPage> {
                       ),
                     ],
                   ),
+                  child: Markdown(
+                    data: '',
+                    styleSheet: MarkdownStyleSheet(
+                      a: GoogleFonts.sourceCodePro(),
+                      p: GoogleFonts.sourceCodePro(),
+                    ),
+                  ),
                 ),
               ),
-              const Flexible(
-                flex: 2,
-                child: PromptInputField(),
-              ),
+              PromptInputField(),
             ],
           ),
         ),

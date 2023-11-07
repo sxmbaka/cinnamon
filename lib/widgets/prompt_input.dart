@@ -13,10 +13,11 @@ class PromptInputField extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(
         top: 20,
-        bottom: 30,
+        bottom: 20,
         left: 20,
         right: 20,
       ),
+      height: 100,
       padding: const EdgeInsets.only(left: 20, right: 15, bottom: 15, top: 15),
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(33.0)),
@@ -57,7 +58,9 @@ class PromptInputField extends StatelessWidget {
               ),
             ),
           ),
-          GenerateResponseButton(),
+          GenerateResponseButton(
+            onPressed: () {},
+          ),
         ],
       ),
     );
